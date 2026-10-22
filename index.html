@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GDGS rclone is a personal, owner-operated Google Drive synchronization configuration for exchanging project artifacts between Google Drive and a local computer.">
+  <title>GDGS rclone — Private Google Drive Synchronization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap nav">
+  <a class="brand" href="./"><span class="mark" aria-hidden="true">G</span> GDGS rclone</a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="./" aria-current="page">Home</a><a href="privacy.html">Privacy policy</a><a href="https://github.com/sihaoyezhu">Developer profile</a></nav>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Personal automation · Google Drive</p>
+    <h1>Private, owner-operated file synchronization.</h1>
+    <p class="lead">GDGS rclone is a private configuration of the open-source rclone tool, used by its owner to transfer project exchange packages between Google Drive and a local computer.</p>
+  </section>
+  <div class="grid">
+    <section class="panel">
+      <p class="small-title">Purpose</p>
+      <h2>Exchange project artifacts</h2>
+      <p>The setup supports controlled transfers of GDGS engineering communication packages. It is not a consumer cloud-storage product or a service for other users.</p>
+    </section>
+    <section class="panel">
+      <p class="small-title">Authorization</p>
+      <h2>Owner-authorized OAuth</h2>
+      <p>The owner authorizes rclone to access their Google Drive through Google's OAuth consent flow. Drive access is governed by the permissions granted to the OAuth client.</p>
+    </section>
+  </div>
+  <section class="panel">
+    <h2>Synchronization directions</h2>
+    <p class="muted">The transfer paths configured by the owner include:</p>
+    <p class="flow"><span class="pill">Google Drive / AI_Communicator / todsh</span><span class="arrow" aria-hidden="true">→</span><span class="pill">Local computer / todsh</span></p>
+    <p class="flow"><span class="pill">Local computer / togpt</span><span class="arrow" aria-hidden="true">→</span><span class="pill">Google Drive / AI_Communicator / togpt</span></p>
+    <div class="callout"><p><strong>Important:</strong> The OAuth client may request broader Google Drive permissions than these particular folders require. These paths describe the intended local synchronization workflow, not a technical restriction enforced by the Google OAuth scope.</p></div>
+  </section>
+  <section class="panel">
+    <h2>How data is handled</h2>
+    <p>File contents and metadata needed for synchronization are processed by the owner's local rclone installation and Google's Drive API. The website you are reading is informational: it has no sign-in form, file upload feature, or connection to your Google Drive.</p>
+    <p>The owner manages the local rclone configuration, credentials and transferred copies. The website does not request or store OAuth tokens.</p>
+    <p>For details about permitted uses, retention, security and contact information, read the <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+  <section class="panel">
+    <h2>About this application</h2>
+    <p>This project is a personal integration for GDGS (GPT–DSH–Gemini System). It uses <a href="https://rclone.org/drive/">rclone's Google Drive backend</a>; it is not affiliated with Google or the rclone maintainers.</p>
+    <p>For general questions, see the <a href="https://github.com/sihaoyezhu">developer's GitHub profile</a>. For an account-specific OAuth support contact, use the support email shown on Google's consent screen. Do not publish OAuth tokens or personal file contents in a public GitHub issue.</p>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 GDGS rclone · Personal use</span><span><a href="privacy.html">Privacy policy</a> · <a href="https://github.com/sihaoyezhu/sihaoyezhu.github.io">Website source</a></span></div></footer>
+</body>
+</html>
